@@ -43,5 +43,5 @@ while True:
             if saved:
                 print(f'{name} succesfully registered.')
             
-    cv.imshow('FR_3000', img)
+    cv.imshow('ASISTENCIANATOR', img)
     cv.waitKey(1)
