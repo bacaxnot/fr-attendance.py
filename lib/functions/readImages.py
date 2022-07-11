@@ -16,6 +16,9 @@ def readImages(dirPath):
     directory = os.listdir(dirPath)
     # iterating trough folder
     for file in directory:
+        # omitting hidden folders
+        if file[0] == '.':
+            continue
         # reading values
         path = f'{dirPath}/{file}'
         name = os.path.splitext(file)[0]
