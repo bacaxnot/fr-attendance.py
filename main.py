@@ -27,7 +27,7 @@ while True:
     faceEncodes = fr.face_encodings(imgS, faceLocations)
 
     for encode, location in zip(faceEncodes, faceLocations):
-        matches = fr.compare_faces(knownFaceEncodes, encode)
+        matches = fr.compare_faces(knownFaceEncodes, encode, 0.55)
         distances = fr.face_distance(knownFaceEncodes, encode)
         matchIndex = np.argmin(distances)
 
