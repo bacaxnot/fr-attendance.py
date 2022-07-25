@@ -39,7 +39,7 @@ while True:
             cv.rectangle(img, (left, bottom-35), (right, bottom), (0, 255, 0), cv.FILLED) 
             cv.putText(img, name, (left+6, bottom-6), cv.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
             
-            saved = saveRegister(name, attendancePath)
+            saved = saveRegister(name, attendancePath)      
             if saved:
                 print(f'{name} succesfully registered.')
             
